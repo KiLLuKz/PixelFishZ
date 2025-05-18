@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body, html {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(to bottom, #87ceeb, #f0e68c); /* ท้องฟ้าฟ้า กับ ทรายเหลือง */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Press Start 2P', cursive; /* ฟอนต์พิกเซล RPG */
+  color: #222;
+  user-select: none;
+}
+
+#game-container {
+  width: 420px;
+  height: 350px;
+  background: linear-gradient(to bottom, #fff8dc, #f5deb3); /* สีทราย */
+  border: 4px solid #8b5a2b; /* ขอบไม้ */
+  border-radius: 10px;
+  box-shadow:
+    0 0 10px 3px #ffecb3,  /* แสงแดดอุ่นๆ */
+    inset 0 0 15px 3px #fffacd; /* แสงในตัวกล่อง */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+#word {
+  font-size: 20px;
+  color: #1e90ff; /* สีน้ำทะเล */
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 0 #fff, 2px 2px 0 #00000066;
+}
+
+#input-box {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  padding: 6px 8px;
+  border: 3px solid #1e90ff;
+  border-radius: 6px;
+  background-color: #f0f8ff; /* สีฟ้าน้ำทะเลอ่อน */
+  color: #003366;
+  outline: none;
+  box-shadow: inset 2px 2px 5px #a0c8ff;
+  margin-bottom: 12px;
+  text-transform: lowercase;
+}
+
+#input-box:disabled {
+  background-color: #d3d3d3;
+  border-color: #999;
+  color: #777;
+}
+
+#progress-bar {
+  width: 100%;
+  height: 22px;
+  background: #deb887; /* สีทรายเข้ม */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: inset 2px 2px 8px #cdaa7d;
+  margin: 10px 0;
+  position: relative;
+}
+
+#progress-bar > div {
+  height: 100%;
+  background: linear-gradient(90deg, #00bfff, #1e90ff); /* สีน้ำทะเลไล่โทน */
+  width: 100%;
+  transition: width 0.2s linear;
+  box-shadow: 0 0 6px #00bfff88;
+}
+
+#result {
+  text-align: center;
+  font-size: 14px;
+  height: 28px;
+  margin-bottom: 6px;
+  color: #8b4513;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+#inventory-list {
+  margin-top: 8px;
+  padding-left: 0;
+  flex-grow: 1;
+  overflow-y: auto;
+  border-top: 2px solid #8b5a2b;
+  padding-top: 6px;
+}
+
+#inventory-list li {
+  list-style: none;
+  font-size: 12px;
+  padding: 3px 0;
+  color: #4b3621;
+  text-shadow: 0 0 1px #fff;
+}
+
+/* สีของ rarity */
+.rarity-Common {
+  color: #228b22; /* สีเขียวเข้ม */
+  font-weight: bold;
+}
+
+.rarity-Rare {
+  color: #4169e1; /* Royal Blue */
+  font-weight: bold;
+}
