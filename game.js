@@ -20,8 +20,7 @@ const vocabList = [
     { th: "กระจกเงา", en: "mirror", rarity: "Rare" },
     { th: "หนังสือ", en: "book", rarity: "Rare" },
     { th: "เก้าอี้", en: "chair", rarity: "Rare" },
-    { th: "โต๊ะ", en: "table", rarity: "Rare" },
-    { th: "ควย", en: "kuy", rarity: "Rare" }
+    { th: "โต๊ะ", en: "table", rarity: "Rare" }
 ];
 
 const fishes = [
