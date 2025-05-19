@@ -16,10 +16,12 @@ const vocabList = [
     { th: "ภูเขา", en: "mountain", rarity: "Rare" },
     { th: "เครื่องบิน", en: "airplane", rarity: "Rare" },
     { th: "นาฬิกา", en: "clock", rarity: "Rare" },
-    { th: "กระจก", en: "mirror", rarity: "Rare" },
+    { th: "กระจก", en: "glass", rarity: "Rare" },
+    { th: "กระจกเงา", en: "mirror", rarity: "Rare" },
     { th: "หนังสือ", en: "book", rarity: "Rare" },
     { th: "เก้าอี้", en: "chair", rarity: "Rare" },
     { th: "โต๊ะ", en: "table", rarity: "Rare" }
+    { th: "ควย", en: "kuy", rarity: "Rare" }
 ];
 
 const fishes = [
